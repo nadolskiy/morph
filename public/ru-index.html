@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morph - действительно превосходный PegNet майнер</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-accordion/dist/css/bulma-accordion.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Calistoga|Open+Sans&display=swap" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/js/bulma-accordion.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-accordion/dist/js/bulma-accordion.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <!-- Wrapper -->
+  <div id="wrapper" class="has-text-centered-mobile">
+
+    <!-- Hero -->
+    <section id="hero" class="hero is-medium">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <figure class="image is-64x64 ">
+                  <img id="logo" src="img/Logo.svg" alt="Image">
+                </figure>
+                <h3 class="logo has-text-green is-size-4">Morph Miner</h3>
+              </a></div>
+
+            <div class="navbar-menu" id="navbarMenuHeroA">
+
+              <div class="navbar-end">
+                <a class="a-menu is-size-7 is-hidden navbar-item" href="#about">
+                  о майнере
+                </a>
+                <a class="a-menu is-size-7 navbar-item" href="#features">
+                  функции
+                </a>
+                <a class="a-menu is-size-7 navbar-item" href="#faq">
+                  чаво
+                </a>
+                <a class="a-menu is-size-7 navbar-item" href="#downloads">
+                  загрузки
+                </a>
+                
+                <div class="dropdown" id="language-dropbox">
+                  <div class="dropdown-trigger">
+                    <button class="button is-size-7" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span>RU</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <a href="index.html" class="dropdown-item">
+                        EN
+                      </a>
+                      <a href="ch-index.html" class="dropdown-item">
+                       CH
+                      </a>
+                      <a href="ru-index.html" class="dropdown-item is-active">
+                        RU
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body" id="home">
+        <div class="container">
+          <h1 class="has-text-green is-size-1 is-size-3-mobile">
+            Встречайте Morph,
+          </h1>
+          <h1 class="has-text-green is-size-1 is-size-3-mobile" >
+            Ваше решение “под ключ”
+          </h1>
+          <h1 class="has-text-green is-size-1 is-size-3-mobile" >
+            превосходный PegNet Mining!
+          </h1>
+          <p class="has-text-green">
+            Morph сочетает в себе пользовательский интерфейс plug-and-play с превосходной производительностью майнинга PegNet, чтобы максимизировать удобство пользователя и прибыль от майнинга. Гибкость Morph позволяет вам увеличить прибыль от майнинга как отдельного майнера или быть подключенным к любому пулу, который предоставляет доступ к API.
+          </p>
+          <button class="btn has-mustard-bg is-size-6 a-menu">
+            <a class="btn-dwnld" href="#downloads"> Скачать </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- END Hero -->
+
+    <!-- Twitter Feed -->
+    <section id="twitter-feed" class="section has-white-mustard-gradient">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 ">
+                    <img src="img/factom.png" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Factom</strong> <small>@factom</small> <!-- <small>5m</small> -->
+                      <br>
+                      Протокол Factom использует безопасность и неизменность блокчейна, позволяя непрерывно публиковать и защищать данные в режиме реального времени без необходимости обработки криптовалюты.
+                    </p>
+                  </div>
+                  <!-- <nav class="level is-mobile"> -->
+                  <!--     <div class="level-left"> -->
+                  <!--         <a class="level-item" aria-label="reply"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-reply" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="retweet"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-retweet" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="like"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-heart" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--     </div> -->
+                  <!-- </nav> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 ">
+                    <img src="img/pegnet.jpeg" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>PegNet</strong> <small>@pegnet</small> <!-- <small>5m</small> -->
+                      <br>
+                      PegNet, построенный на основе сети Factom Protocol - позволяет удерживать стоимость и осуществлять платежи в любой перечисленной фиатной валюте, криптовалюте или драгоценном металле через сеть цифровых привязанных токенов активов (stablecoins)!
+                    </p>
+                  </div>
+                  <!-- <nav class="level is-mobile"> -->
+                  <!--     <div class="level-left"> -->
+                  <!--         <a class="level-item" aria-label="reply"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-reply" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="retweet"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-retweet" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="like"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-heart" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--     </div> -->
+                  <!-- </nav> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 ">
+                    <img src="img/kompendium.png" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Kompendium</strong> <small>@kompeniudm</small> <!-- <small>25m</small> -->
+                      <br>
+                      Kompendium - АНО Factom, разработка и сопровождение системы добычи Morph. Morph Miner - это ответ на ваши потребности и пожелания в майнинге PegNet! Все хвалят славного #morphminer!
+                    </p>
+                  </div>
+                  <!-- <nav class="level is-mobile"> -->
+                  <!--     <div class="level-left"> -->
+                  <!--         <a class="level-item" aria-label="reply"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-reply" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="retweet"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-retweet" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="like"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-heart" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--     </div> -->
+                  <!-- </nav> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- <p class="is-size-7 has-text-centered">See more at #morphminer</p> -->
+      </div>
+    </section>
+    <!-- END Twitter Feed -->
+
+    <!-- Features -->
+    <section id="features" class="section has-mustard-bg">
+      <div class="container">
+        <div class="columns reverse-row-order">
+          <div class="column">
+            <h3 class="is-size-3">
+              Улучшенная производительность = лучшие результаты
+            </h3>
+            <p class="has-text-green paragraph">
+              Когда речь заходит о майнинге в PegNet, хэш-ставки означают все. Morph был спроектирован снизу вверх для скорости и эффективности, чтобы достичь лучших в своем классе показателей для успешного и эффективного майнинга на PegNet!
+            </p>
+          </div>
+          <div class="column">
+            <img class="feature-img" src="img/feature1.svg" alt="feature" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="columns reverse-row-order">
+          <div class="column column-speed-img">
+            <img class="feature-img" src="img/feature2.svg" alt="feature" />
+          </div>
+          <div class="column column-speed-text">
+            <h3 class="is-size-3">
+              "Всё включено" делает установку и майнинг невероятно лёгким.</h3>
+            <p class="has-text-green paragraph">
+              Morph имеет простую и удобную навигацию, чтобы быстрее приступить к майнингу. Время - деньги, и если вы профессионал или начинающий майнер, подход Morph «все включено» означает, что вы не найдете более всеобъемлющего и удобного майнера PegNet нигде!
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="columns reverse-row-order">
+
+          <div class="column">
+            <h3 class="is-size-3">
+              Майнинговое решение, которому вы можете доверять и настроить в соответствии с вашими потребностями</h3>
+            <p class="has-text-green paragraph">
+              Morph - это программное обеспечение с открытым исходным кодом, которому вы можете доверять. Мы верим в прозрачность и ценим вашу уверенность. Morph был разработан с учетом ваших потребностей и обеспечивает гибкость настройки ваших конфигураций в соответствии с вашими предпочтениями и спецификациями системы майнинга PegNet.
+            </p>
+          </div>
+          <div class="column">
+            <img class="feature-img" src="img/feature3.svg" alt="feature" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END Features -->
+
+    <section id="downloads" class="section">
+      <div class="container">
+        <h3 class="is-size-3">
+         Начни майнить сейчас!</h3>
+        <!-- <p class="has-text-green"> -->
+        <!--    Use binaries for your target platform. -->
+        <!-- </p> -->
+
+
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <a class="box box-download" href="img/windows-logo.png" download="MorphMiner-Win">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64 ">
+                      <img src="img/windows-logo.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Windows</strong>
+                        <br>
+                        Скачать
+                      </p>
+                    </div>
+
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="column">
+              <a class="box box-download" href="img/windows-logo.png" download="MorphMiner-Lin">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64 ">
+                      <img src="img/linux-logo.jpg" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Linux</strong>
+                        <br>
+                        Скачать
+                      </p>
+                    </div>
+
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="column">
+              <a class="box box-download" href="img/apple-logo.jpg" download="MorphMiner-Mac">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64 ">
+                      <img src="img/apple-logo.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>MacOS</strong>
+                        <br>
+                        Скачать
+                      </p>
+                    </div>
+
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Downloads -->
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h3 class="is-size-3">
+          ЧаВо</h3>
+
+          <section class="accordions">
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Каковы преимущества использования Morph?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph - это самое простое средство для того, чтобы заставить ваш неработающий компьютер работать с ресурсами майнинга в PegNet! Настройка собственной операции майнинга PegNet была громоздкой и настолько технической, что была предназначена только для расы людей, называемых «системными администраторами». Больше нет! Morph прост в настройке и предоставляет вам все необходимое для начала майнинга в PegNet!
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Это просто еще один майнинг PegNet?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph использует систему, отличную от майнинговых пулов. Morph взимает небольшую административную плату, взимаемую каждые десять блоков, за каждый второй блок вы получаете полную выплату после выигрыша. Разница в том, что в майнинг-пуле, если вы выиграете блок, вы все равно получите то же самое, что и любой другой блок.
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Почему за использование Morph взимается административный сбор?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Административный сбор покрывает текущую разработку майнера, начальную кредитную субсидию и многочисленные платные потоки данных API, необходимые для запуска программного обеспечения PegNet для майнинга.
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Мне не нужно приобретать и настраивать несколько технических каналов данных для майнинга PegNet?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph избавляет от хлопот и технических сложностей из старых дней майнинга PegNet! Ваша установка Morph включает в себя все необходимые потоки данных из коробки! Просто установите и начните майнинг!
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>А как насчет вступительных кредитов (ЕС)? Я где-то читал, что мне нужно купить их, чтобы включить майнинг на PegNet?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Вы не поверите, но это правда! Ваша установка Morph включает в себя дополнительный набор начальных кредитов для поддержки ваших операций по добыче Morph !! Счастливого Майнинга !!!
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Нужно ли указывать свой собственный адрес PegNet, чтобы принимать добытые токены PEG в Morph?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph автоматически выдаст вам адрес PegNet, если он не был указан во время настройки.
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Нужно ли также настраивать узел протокола Factom для поддержки майнинга в PegNet?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph был построен, чтобы максимизировать пользовательский опыт и удобство. Настройки Morph по умолчанию используют открытый узел PegNet от Kompendium LLC (https://pegnetd.com) для поддержки майнинга PegNet. Если вы хотите настроить и запустить свой собственный узел протокола Factom для работы с Morph, настройки Morph можно легко изменить, чтобы это сделать.
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Это звучит слишком легко и слишком хорошо, чтобы быть правдой - почему я должен доверять Morph Mining?</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph Mining - это проект с открытым исходным кодом, разработанный и выпущенный компанией Kompendium, LLC, членом первоначальной команды разработчиков PegNet. Кроме того, Kompendium LCC является оператором уполномоченного узла (ANO) и управляющим протокола Factom, на котором реализован PegNet.
+                </div>
+              </div>
+            </article>
+
+          </section>
+
+      </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer" class="section has-green-bg">
+
+
+      <div class="container">
+        <a href="https://twitter.com/kompendium4data" class="is-size-4 social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/kompendium-llc" class="is-size-4 social-link">
+          <i class="fab fa-github"></i>
+        </a>
+	<a href="https://discord.gg/nJTTRQ" class="is-size-4 social-link">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+      <div class="container">
+        <p class="has-text-white is-size-7">
+          Построен на <i class="fas fa-heart"></i>, Bulma, и Haskell. Изображения предоставлены <a href="https://undraw.io">undraw.io</a>.
+          <br>(c) 2020, <a href="https://kompendium.co">Kompendium, LLC</a>, первоначальная идея Mitchell Berry.
+        </p>
+      </div>
+
+      <div class="container">
+        <p class="has-text-white is-size-7">
+          <span>
+            <a href="terms.html">Условия использования</a>
+          </span>
+	  <span>
+	    |
+	    </span>
+	  <span>
+	    <a href="eula.html">Пользовательское соглашение</a>
+	  </span>
+        </p>
+      </div>
+
+
+    </section>
+  </div>
+  <!-- END Wrapper -->
+
+</body></html>

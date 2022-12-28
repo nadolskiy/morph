@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morph - 真正出色的 PegNet 矿工</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-accordion/dist/css/bulma-accordion.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Calistoga|Open+Sans&display=swap" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/js/bulma-accordion.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/bulma-accordion/dist/js/bulma-accordion.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <!-- Wrapper -->
+  <div id="wrapper" class="has-text-centered-mobile">
+
+    <!-- Hero -->
+    <section id="hero" class="hero is-medium">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <figure class="image is-64x64 ">
+                  <img id="logo" src="img/Logo.svg" alt="Image">
+                </figure>
+                <h3 class="logo has-text-green is-size-4">Morph Miner</h3>
+              </a></div>
+
+            <div class="navbar-menu" id="navbarMenuHeroA">
+
+              <div class="navbar-end">
+                <a class="a-menu is-size-7 is-hidden navbar-item" href="#about">
+                  关于
+                </a>
+                <a class="a-menu is-size-7 navbar-item" href="#features">
+                  拥有
+                </a>
+                <a class="a-menu is-size-7 navbar-item" href="#faq">
+                  常见问题解答
+                </a>
+                <a class="a-menu is-size-7 navbar-item" href="#downloads">
+                  下载
+                </a>
+                
+                <div class="dropdown" id="language-dropbox">
+                  <div class="dropdown-trigger">
+                    <button class="button is-size-7" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span>CH</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <a href="index.html" class="dropdown-item">
+                        EN
+                      </a>
+                      <a href="ch-index.html" class="dropdown-item is-active">
+                       CH
+                      </a>
+                      <a href="ru-index.html" class="dropdown-item">
+                        RU
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body" id="home">
+        <div class="container">
+          <h1 class="has-text-green is-size-1 is-size-3-mobile">
+            认识变形
+          </h1>
+          <h1 class="has-text-green is-size-1 is-size-3-mobile" >
+            您的“交钥匙”解决方案
+          </h1>
+          <h1 class="has-text-green is-size-1 is-size-3-mobile" >
+            到高级 PegNet 采矿！
+          </h1>
+          <p class="has-text-green">
+            Morph将即插即用的用户体验与卓越的PegNet挖掘性能相结合，以最大程度地提高用户便利性和挖掘利润。Morph的灵活性使您可以作为独立的矿工或连接到任何提供API访问权限的池来增加采矿利润。
+          </p>
+          <button class="btn has-mustard-bg is-size-6 a-menu">
+            <a class="btn-dwnld" href="#downloads">下载</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- END Hero -->
+
+    <!-- Twitter Feed -->
+    <section id="twitter-feed" class="section has-white-mustard-gradient">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 ">
+                    <img src="img/factom.png" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Factom</strong> <small>@factom</small> <!-- <small>5m</small> -->
+                      <br>
+                      Factom 协议利用了区块链的安全性和不变性，允许实时连续地发布和保护数据，而无需处理加密货币。
+                    </p>
+                  </div>
+                  <!-- <nav class="level is-mobile"> -->
+                  <!--     <div class="level-left"> -->
+                  <!--         <a class="level-item" aria-label="reply"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-reply" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="retweet"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-retweet" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="like"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-heart" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--     </div> -->
+                  <!-- </nav> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 ">
+                    <img src="img/pegnet.jpeg" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>PegNet</strong> <small>@pegnet</small> <!-- <small>5m</small> -->
+                      <br>
+                      PegNet 建立在Factom协议网络之上，使您能够通过数字化钉住资产令牌（稳定币）网络持有价值并以任何列出的法定货币，加密货币或贵金属进行支付！
+                    </p>
+                  </div>
+                  <!-- <nav class="level is-mobile"> -->
+                  <!--     <div class="level-left"> -->
+                  <!--         <a class="level-item" aria-label="reply"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-reply" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="retweet"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-retweet" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="like"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-heart" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--     </div> -->
+                  <!-- </nav> -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64 ">
+                    <img src="img/kompendium.png" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Kompendium</strong> <small>@kompeniudm</small> <!-- <small>25m</small> -->
+                      <br>
+                      Kompendium 是 Factom ANO，是 Morph 采矿系统的开发者和维护者。Morph 矿工是您PegNet采矿需求和愿望的答案！所有人都赞扬了光荣的 #morphminer！
+                    </p>
+                  </div>
+                  <!-- <nav class="level is-mobile"> -->
+                  <!--     <div class="level-left"> -->
+                  <!--         <a class="level-item" aria-label="reply"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-reply" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="retweet"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-retweet" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--         <a class="level-item" aria-label="like"> -->
+                  <!--             <span class="icon is-small"> -->
+                  <!--                 <i class="fas fa-heart" aria-hidden="true"></i> -->
+                  <!--             </span> -->
+                  <!--         </a> -->
+                  <!--     </div> -->
+                  <!-- </nav> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- <p class="is-size-7 has-text-centered">See more at #morphminer</p> -->
+      </div>
+    </section>
+    <!-- END Twitter Feed -->
+
+    <!-- Features -->
+    <section id="features" class="section has-mustard-bg">
+      <div class="container">
+        <div class="columns reverse-row-order">
+          <div class="column">
+            <h3 class="is-size-3">
+              性能提升=更好的结果
+            </h3>
+            <p class="has-text-green paragraph">
+              在PegNet上进行挖掘时，哈希率至关重要。Morph是专为提高速度和效率而设计的，旨在实现一流的性能，以成功，有效地在PegNet上进行挖掘
+            </p>
+          </div>
+          <div class="column">
+            <img class="feature-img" src="img/feature1.svg" alt="feature" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="columns reverse-row-order">
+          <div class="column column-speed-img">
+            <img class="feature-img" src="img/feature2.svg" alt="feature" />
+          </div>
+          <div class="column column-speed-text">
+            <h3 class="is-size-3">
+              多合一包装使安装，挖掘轻而易举</h3>
+            <p class="has-text-green paragraph">
+              Morph 具有简化且易于浏览的设置，可助您更快地进行挖掘。时间就是金钱，无论您是专业矿工还是新手矿工，Morph的“包罗万象”方法都意味着您在任何地方都找不到更全面，便捷的PegNet矿机！
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="columns reverse-row-order">
+
+          <div class="column">
+            <h3 class="is-size-3">
+              您可以信任并根据需要配置的采矿解决方案</h3>
+            <p class="has-text-green paragraph">
+              Morph是可以探索和信任的开源软件。我们相信透明度，并重视您的信心。Morph的构建充分考虑了您的需求，可灵活地自定义配置以适合您的偏好和PegNet采矿系统规范。
+            </p>
+          </div>
+          <div class="column">
+            <img class="feature-img" src="img/feature3.svg" alt="feature" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END Features -->
+
+    <section id="downloads" class="section">
+      <div class="container">
+        <h3 class="is-size-3">
+          立即开始挖掘！</h3>
+        <!-- <p class="has-text-green"> -->
+        <!--    Use binaries for your target platform. -->
+        <!-- </p> -->
+
+
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <a class="box box-download" href="img/windows-logo.png" download="MorphMiner-Win">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64 ">
+                      <img src="img/windows-logo.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Windows</strong>
+                        <br>
+                        下载
+                      </p>
+                    </div>
+
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="column">
+              <a class="box box-download" href="img/windows-logo.png" download="MorphMiner-Lin">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64 ">
+                      <img src="img/linux-logo.jpg" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Linux</strong>
+                        <br>
+                        下载
+                      </p>
+                    </div>
+
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="column">
+              <a class="box box-download" href="img/apple-logo.jpg" download="MorphMiner-Mac">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64 ">
+                      <img src="img/apple-logo.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>MacOS</strong>
+                        <br>
+                        下载
+                      </p>
+                    </div>
+
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+    <!-- End Downloads -->
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h3 class="is-size-3">
+          常问问题</h3>
+
+          <section class="accordions">
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>使用 Morph 有什么好处？</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph 是让您的闲置计算机在PegNet上运行挖掘资产的绝对最简单的方法！设置自己的PegNet采矿操作过去很麻烦，因此技术上仅保留给称为“系统管理员”的人类种族使用。Morph 易于设置，可为您提供开始在PegNet上进行挖掘所需的一切！
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>这只是另一个PegNet采矿池吗</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph 使用与矿池不同的系统。Morph每十个区块收取少量管理费，每赢得一个区块您将获得全额支付。不同之处在于，在矿池中，如果您要赢得一个区块，您仍然只会获得与其他每个区块相同的收益。
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>为什么使用 Morph 需要支付管理费</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  管理费涵盖了正在进行的矿工开发，入门信用补贴以及运行PegNet采矿软件所需的众多付费API数据供稿。
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>我不需要为PegNet采矿购买和设置多个技术数据提要吗</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph消除了过去PegNet采矿时代的麻烦和技术复杂性！您安装的Morph包括开箱即用的所有必需数据！只需安装并开始挖掘！
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>入门学分（EC）呢？我读过某个地方，我需要购买这些东西才能在PegNet上进行挖掘？</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  您不会相信这一点，但这是真的！您安装的Morph包括补充的入门级积分，可为您的Morph采矿业务提供动力！！采矿愉快！！！
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>我需要提供自己的PegNet地址以接受我在Morph中开采的PEG代币吗？</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  如果设置过程中未提供，Morph将自动为您生成一个PegNet地址。
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>我是否还需要设置一个Factom协议节点以支持在PegNet上进行挖掘？ </p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph旨在最大程度地提高用户体验和便利性。Morph的默认设置使用Kompendium LLC的PegNet开放节点（https://pegnetd.com）支持PegNet挖掘。如果您希望设置并运行自己的Factom协议节点以与Morph一起运行，则可以轻松调整Morph的设置以允许该操作。
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>这听起来太容易了，太好了，难以置信-为什么我应该相信Morph Mining？</p>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Morph Mining是由Kompendium，LLC（PegNet原始开发团队的成员）设计和发布的一个开源项目。此外，Kompendium LCC是授权节点运营商（ANO）和Factom协议的管家，在该协议上实现了PegNet。
+                </div>
+              </div>
+            </article>
+
+          </section>
+
+      </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer" class="section has-green-bg">
+
+
+      <div class="container">
+        <a href="https://twitter.com/kompendium4data" class="is-size-4 social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/kompendium-llc" class="is-size-4 social-link">
+          <i class="fab fa-github"></i>
+        </a>
+	<a href="https://discord.gg/nJTTRQ" class="is-size-4 social-link">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+      <div class="container">
+        <p class="has-text-white is-size-7">
+          与 <i class="fas fa-heart"></i>, Bulma, 和 Haskell. 图片提供者 by <a href="https://undraw.io">undraw.io</a>.
+          <br>(c) 2020, <a href="https://kompendium.co">Kompendium, LLC</a>, 最初的想法 Mitchell Berry.
+        </p>
+      </div>
+
+      <div class="container">
+        <p class="has-text-white is-size-7">
+          <span>
+            <a href="terms.html">条款及细则</a>
+          </span>
+	  <span>
+	    |
+	    </span>
+	  <span>
+	    <a href="eula.html">用户协议</a>
+	  </span>
+        </p>
+      </div>
+
+
+    </section>
+  </div>
+  <!-- END Wrapper -->
+
+</body></html>
